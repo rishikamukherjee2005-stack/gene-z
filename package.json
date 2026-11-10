@@ -1,0 +1,35 @@
+{
+  "name": "genez-frontend",
+  "version": "1.0.0",
+  "description": "AI-Powered Gene Sequence Retrieval and Analysis Tool Frontend",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "chart.js": "^4.4.4",
+    "lucide-react": "^0.446.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.6",
+    "tailwindcss": "^3.4.11",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47"
+  },
+  "keywords": [
+    "bioinformatics",
+    "ncbi",
+    "entrez",
+    "biopython",
+    "gemini-ai",
+    "dna-analysis",
+    "react"
+  ],
+  "author": "Bioinformatics Academic Project",
+  "license": "MIT"
+}
+

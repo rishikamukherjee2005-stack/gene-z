@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeneZ – AI-Powered Gene Sequence Retrieval & Analysis Platform</title>
+
+  <!-- Favicon: DNA Double Helix Icon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314b8a6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M2 15c6.667-6 13.333 0 20-6'/><path d='M9 22c1.798-1.998 2.518-3.995 2.807-5.993'/><path d='M15 2c-1.798 1.998-2.518 3.995-2.807 5.993'/><path d='m17 6-2.5-2.5'/><path d='m14 8-1-1'/><path d='m7 18 2.5 2.5'/><path d='m3.5 14.5.5.5'/><path d='m20 9 .5.5'/><path d='m6.5 12.5 1 1'/><path d='m16.5 10.5 1 1'/><path d='m10 16 1 1'/></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono for DNA sequences -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#070d19',
+              900: '#0a192f',
+              850: '#0d1f3b',
+              800: '#0f2342',
+              700: '#1e3a5f',
+              600: '#2a4d7d'
+            },
+            teal: {
+              400: '#2dd4bf',
+              500: '#14b8a6',
+              600: '#0d9488'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Chart.js for Bioinformatics Comparative Data Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- React 18 & ReactDOM Production UMD -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+
+  <!-- Babel Standalone for in-browser JSX parsing -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="/static/css/custom.css">
+</head>
+<body class="bg-[#070d19] text-slate-100 antialiased min-h-screen">
+  <!-- React App Mount Root -->
+  <div id="root">
+    <!-- Initial Loading State Skeleton before React mounts -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+      <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-teal-500 to-cyan-400 flex items-center justify-center mb-4 shadow-xl shadow-teal-500/20 animate-pulse">
+        <svg class="w-8 h-8 text-slate-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+        </svg>
+      </div>
+      <h1 class="text-xl font-bold font-mono tracking-tight text-white">
+        Gene<span class="text-teal-400">Z</span> Platform
+      </h1>
+      <p class="text-xs text-slate-400 mt-2 max-w-sm">
+        Initializing NCBI Entrez Sequence Analysis & Gemini AI Engine...
+      </p>
+    </div>
+  </div>
+
+  <!-- React Components (loaded with Babel) -->
+  <script type="text/babel" src="/static/js/components/Navbar.js"></script>
+  <script type="text/babel" src="/static/js/components/SearchSection.js"></script>
+  <script type="text/babel" src="/static/js/components/ResultsOverview.js"></script>
+  <script type="text/babel" src="/static/js/components/NcbiSourceTable.js"></script>
+  <script type="text/babel" src="/static/js/components/FastaViewer.js"></script>
+  <script type="text/babel" src="/static/js/components/SequenceMetrics.js"></script>
+  <script type="text/babel" src="/static/js/components/ComparativeSection.js"></script>
+  <script type="text/babel" src="/static/js/components/BioToolsSection.js"></script>
+  <script type="text/babel" src="/static/js/components/GeminiChatbot.js"></script>
+  <script type="text/babel" src="/static/js/components/ApiKeyModal.js"></script>
+
+  <!-- Main React App Coordinator -->
+  <script type="text/babel" src="/static/js/app.js"></script>
+</body>
+</html>
+
